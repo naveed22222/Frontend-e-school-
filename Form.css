@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+.hero_area {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.sub_page .hero_area {
+    min-height: auto;
+}
+.header_section .header_top {
+    padding: 15px 0;
+    background:url(pictures/blue4.jpg);
+    background-size: cover;
+}
+.contact_nav a {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.footer_section {
+    position: relative;
+  background:url(pictures/blue4.jpg);
+    background-size: cover;
+
+    text-align: center;
+}
+
+.footer_section p {
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.footer_section p a {
+    color:  #ffffff;
+}
+/* Sign In , Sign Up Form */
+
+body
+ html   {
+	      height:100%;
+		     
+	
+}
+
+	.border{
+		
+	
+		    width:430px;
+            height:auto;
+			margin:auto;	
+		  padding:30px;
+		   margin-top:80px;
+		   border-width: 20px;
+		  
+	} 
+	button{
+		   margin-top:30px;
+		   
+	}
+	select{
+		  margin:20px;
+		
+	}
+
+	h1{
+		font-family:Sinethar; 
+	}
+
+	.container{
+		padding:30px;
+	}
+	
+
+	input[type="text"],	input[type="password"],	input[type="email"]{
+		border-radius: 10px;
+       
+		
+	}
+   
+

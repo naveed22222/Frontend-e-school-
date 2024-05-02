@@ -1,0 +1,11 @@
+.wrap{
+    background: url(pictures/blue4.jpg);
+    background-size: cover;
+    height: 35vh;
+}
+h5{
+    text-align: center;
+}
+.fa-quote-left{
+    color:white;
+}

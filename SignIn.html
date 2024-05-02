@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign In</title>
+	<link rel="stylesheet" href="Form.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/MyJquery.js"></script>
+
+</head>
+
+<body>
+	  
+  <!-- navbar start -->
+  <section>
+	
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
+	<div class="container-fluid">
+	
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="fa fa-bars"></span> Menu
+	  </button>
+	  <div class="collapse navbar-collapse" id="ftco-nav">
+		<ul class="navbar-nav m-auto">
+			<li class="nav-item active"><a href="Main.html" class="nav-link pr-3" style="color: blue;">Home</a></li>
+	   
+	   
+			<li class="nav-item"><a href="admission.html" class="nav-link pr-3">Admission</a></li>
+	
+		<li class="nav-item"><a href="contactus.html" class="nav-link  pr-3">Contact Us</a></li>
+	   
+		<li class="nav-item"><a href="SignUp.html" class="nav-link  pr-3">Sign Up</a></li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+<!-- END nav -->
+
+	
+<div class="container">
+	<div class="row">
+		
+		
+	<form class="border"> 
+	 <h1 class="text-primary text-center" >Sign In </h1>
+  <div>
+    <label >Name:</label>
+    <input type="text" id="fname"class="form-control" placeholder="Enter Your Name" onblur="FirstName()">
+	<span id="fnamemsg" class="text-danger font-weight-bold"></span>
+  </div>
+  <br>
+  <div>
+    <label>Password: </label>
+	<a href="#" style="float:right; font-size:14px;" class="text-primary "><b>Forgot Password</b></a>
+    <input type="password"  id="fname" class="form-control" placeholder="Enter Your Password"onblur="FirstName()">
+	<span id="fnamemsg" class="text-danger font-weight-bold"></span>
+     
+  </div>
+		 <br/>
+        <div>
+		<button class="btn btn-primary p-50; " ><a href="Main.html" style="text-decoration: none; color: white;">Sign In</a> </button>
+		</div>
+  <br>
+			  <div>
+         <a href="SignUp.html"class="text-dark " style="text-decoration: none;"><b>Create New Account</b></a>
+	  </div>
+</form>
+
+
+
+	</div>
+	
+
+</div>
+   
+
+    <!-- info section -->
+    <section class="info_section ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="info_contact">
+						<h5>
+							<a href="" class="navbar-brand">
+								<span>
+				  eSchool
+				</span>
+							</a>
+						</h5>
+						<p>
+							<i class="fa fa-map-marker" aria-hidden="true"></i> Address
+						</p>
+						<p>
+							<i class="fa fa-phone" aria-hidden="true"></i> +923094526094
+						</p>
+						<p>
+							<i class="fa fa-envelope" aria-hidden="true"></i> eSchool@gmail.com </p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="info_info">
+						<h5>
+							Information
+						</h5>
+						<p>
+						  A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="info_links">
+						<h5>
+							Useful Link
+						</h5>
+						<ul>
+							<li>
+								<a href="Main.html">
+				  Home
+				</a>
+							</li>
+							<li>
+								<a href="AboutUs.html">
+				  About
+				</a>
+							</li>
+							<li>
+								<a href="Downloads.html">
+				Downloads
+				</a>
+							</li>
+							<li>
+								<a href="uniform.html">
+				  Uniform           </a>
+							</li>
+							<li>
+								<a href="Message.html">
+				Message
+				</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="info_form ">
+						<h5>
+						   eSchool
+						</h5>
+						<form action="">
+							<input type="email" placeholder="Enter your feedback">
+							<button>
+				Send
+			  </button>
+						</form>
+						<div class="social_box">
+							<a href="">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a href="">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  
+	<!-- end info_section -->
+  
+  
+	<!-- footer section -->
+	<footer class="footer_section">
+		<div class="container">
+			<p>
+				&copy; <span id="displayYear"></span> All Rights Reserved By
+				<a href="index.html">eSchool</a>
+			</p>
+		</div>
+	</footer>
+	<!-- footer section -->
+  
+<script>
+	function FirstName()
+ {
+						var x = document.getElementById("fname").value;
+						document.getElementById("fnamemsg").innerHTML="";
+							if(x=="")
+							{
+								document.getElementById('fnamemsg').innerHTML = "*Field is empty";
+								}
+							else if(!x.match(/^[a-zA-Z]+$/))
+							{
+								document.getElementById('fnamemsg').innerHTML = "*Only alphabets are allowed in FirstName"; 
+								}
+							else if((x.length<3)||(x.lenght>15))
+							{ 
+								document.getElementById('fnamemsg').innerHTML = "*Your Character must be 3 to 15 Character in FirstName Field";
+								}  
+}
+</script>
+
+
+
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

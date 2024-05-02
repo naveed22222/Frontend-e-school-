@@ -1,0 +1,17 @@
+.wrap{
+    background: url(pictures/blue4.jpg);
+    background-size: cover;
+    height: 35vh;
+}
+.box{
+    height: 10vh;
+    width: 400px;
+    background-color: white;
+    transition: 1s;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.box:hover{
+    transform: scale(1.3);
+}
